@@ -2,7 +2,7 @@
   "name": "reactstrap-dataview",
   "version": "1.0.0",
   "description": "react component library",
-  "main": "index.js",
+  "main": "src/index.tsx",
   "devDependencies": {
     "@types/react": "^16.9.4",
     "@types/react-dom": "^16.9.1",
@@ -60,5 +60,20 @@
     "env": {},
     "componentsDefaultDirectory": "src/components/{name}",
     "packageManager": "npm"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
