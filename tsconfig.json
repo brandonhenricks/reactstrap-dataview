@@ -18,7 +18,6 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "declaration": true,
     "declarationDir": "./dist",
     "sourceMap": true,
     "noUnusedParameters": true,
@@ -27,7 +26,7 @@
     "outDir": "./dist",
   },
   "include": [
-    "src"
+    "src/**/*"
   ],
   "exclude": [
     "node_modules"
