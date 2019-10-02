@@ -6,6 +6,9 @@ module.exports = {
         'prettier/@typescript-eslint',
         'plugin:prettier/recommended',
     ],
+    env: {
+      "es6": true
+    },
     parserOptions: {
         ecmaVersion: 2018,
         sourceType: 'module',
