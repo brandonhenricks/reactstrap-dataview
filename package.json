@@ -1,0 +1,64 @@
+{
+  "name": "reactstrap-dataview",
+  "version": "1.0.0",
+  "description": "react component library",
+  "main": "index.js",
+  "devDependencies": {
+    "@types/react": "^16.9.4",
+    "@types/react-dom": "^16.9.1",
+    "@typescript-eslint/eslint-plugin": "^2.3.2",
+    "@typescript-eslint/parser": "^2.3.2",
+    "bootstrap": "^4.3.1",
+    "concurrently": "^4.1.2",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.15.1",
+    "prepend-file": "^1.3.1",
+    "prettier": "^1.18.2",
+    "reactstrap": "^8.0.1",
+    "rollup": "^1.22.0",
+    "rollup-plugin-typescript2": "^0.24.3",
+    "ts-node": "^8.4.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.6.3"
+  },
+  "peerDependencies": {
+    "react": "^16.10.1",
+    "react-dom": "^16.10.1"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "build-watch": "rollup -c -w",
+    "install-all": "npm i && cd example && npm i",
+    "start-example": "cd example && npm start",
+    "deploy-example": "cd example && npm run deploy",
+    "dev": "concurrently --kill-others \"npm run build-watch\" \"npm run start-example\"",
+    "test": "ts-node test/test.ts",
+    "pretest": "npm run build",
+    "test:lint": "eslint ./src/**/*.ts ./src/**/*.tsx ./example/src/**/*.ts ./example/src/**/*.tsx",
+    "test:lint:fix": "npm run test:lint -- --fix"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonhenricks/reactstrap-dataview.git"
+  },
+  "keywords": [
+    "react",
+    "reactstrap"
+  ],
+  "author": "Brandon Henricks",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandonhenricks/reactstrap-dataview/issues"
+  },
+  "homepage": "https://github.com/brandonhenricks/reactstrap-dataview#readme",
+  "bit": {
+    "env": {},
+    "componentsDefaultDirectory": "src/components/{name}",
+    "packageManager": "npm"
+  }
+}
